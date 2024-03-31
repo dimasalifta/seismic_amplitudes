@@ -33,7 +33,7 @@ for contour in contours:
         approx = cv2.approxPolyDP(contour, epsilon, True)
         cv2.drawContours(filtered_contours_img, [approx], -1, 255, thickness=cv2.FILLED, lineType=cv2.LINE_AA)
      
-        # # Calculate the minimum bounding rectangle of the contour
+        # # Calculate the minimum bounding rectangle of the contour koko
         # rect = cv2.minAreaRect(contour)
         # # Get the center and orientation angle of the rectangle
         # center, size, angle = rect
